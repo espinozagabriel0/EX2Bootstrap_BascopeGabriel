@@ -23,11 +23,31 @@ header#header-section{
 
     .header-text{
         max-width: 540px;
-        // border: 1px solid cyan;
     }
 }
 
+main{
+    section{
+        padding: 100px 0;
+    }
+}
 
+section#about-section{
+    h2{
+        font-size: 50px;
+        color: $main-text;
+    }
+    .row{
+        gap: 30px;
+    }
+    .about-us-video{
+        background: url('/img/aboutUs-img.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 324px;
+        cursor: pointer;
+    }
+}
 
 
 footer{
