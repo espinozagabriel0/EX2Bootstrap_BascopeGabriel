@@ -1,5 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
 $main-text: #333333;
 $primary: #7036BA;
+
+
+$md: 768px;
+$sm: 576px;
+
 
 body{
     box-sizing: border-box;
@@ -11,15 +18,19 @@ h1{
 h2{
     font-size: 50px;
 }
-
+button.navbar-toggler span{
+    color: white;
+}
+img.logo{
+    width: 164px;
+}
 
 header#header-section{
-    // border: 1px solid red;
     background: url('/img/gymHeader.jpg');
     background-position: right;
-    background-size: 50%;
+    background-size: 50% 100%;
     background-repeat: no-repeat;
-    // min-width: 100%;}
+    height: 800px;
 
     p{
         font-size: 24px;
@@ -27,12 +38,41 @@ header#header-section{
 
     .header-text{
         max-width: 540px;
+        margin-top: 9rem;
+
+        button{
+            font-size: 25px;
+            line-height: 25px;
+            padding: 10px 30px;
+            width: fit-content;
+        }
+        @media screen and (max-width: $sm){
+            h1{
+                font-size: 40px;  
+            }
+        }
+    }
+
+    ul li{
+        font-size: 16px;
+        font-weight: lighter;
+        font-family: "Raleway", sans-serif;
+    }
+
+    @media screen and (max-width: $md){
+        background-position: bottom;
+        background-size: 100% 49%;  
+        .header-text{
+            margin-top: 1rem;
+            text-align: center;
+            align-items: center;
+        }
     }
 }
 
 main{
     section{
-        padding: 100px 0;
+        padding: 100px 10px;
     }
 }
 
@@ -52,6 +92,9 @@ section#about-section{
     }
 }
 section#how-to-start-section{
+    .row, p{
+        font-family: "Raleway", sans-serif;
+    }
     p{
         font-size: 18px;
     }
@@ -60,13 +103,16 @@ section#how-to-start-section{
     }
     img.arrow{
         width: 30px;
+        @media screen and (max-width: 992px){
+            display: none;
+        }   
     }
     .row{
         div p{
             font-size: 20px;
-            font-weight: lighter;
         }
     }
+
 }
 
 section#features{
@@ -115,6 +161,7 @@ section#pricing{
         ul li{
             font-size: 18px;
             line-height: 25px;
+            font-family: "Raleway", sans-serif;
         }
     }
 }
