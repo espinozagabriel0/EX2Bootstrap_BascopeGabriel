@@ -5,6 +5,12 @@ body{
     box-sizing: border-box;
     background-color: $primary;
 }
+h1{
+    font-size: 60px;
+}
+h2{
+    font-size: 50px;
+}
 
 
 header#header-section{
@@ -13,10 +19,8 @@ header#header-section{
     background-position: right;
     background-size: 50%;
     background-repeat: no-repeat;
-    // min-width: 100%;
-    h1{
-        font-size: 60px;
-    }
+    // min-width: 100%;}
+
     p{
         font-size: 24px;
     }
@@ -34,7 +38,6 @@ main{
 
 section#about-section{
     h2{
-        font-size: 50px;
         color: $main-text;
     }
     .row{
@@ -46,6 +49,23 @@ section#about-section{
         background-size: cover;
         height: 324px;
         cursor: pointer;
+    }
+}
+section#how-to-start-section{
+    p{
+        font-size: 18px;
+    }
+    span.start-numbers{
+        font-size: 75px;
+    }
+    img.arrow{
+        width: 30px;
+    }
+    .row{
+        div p{
+            font-size: 20px;
+            font-weight: lighter;
+        }
     }
 }
 
