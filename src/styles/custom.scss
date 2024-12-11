@@ -11,9 +11,7 @@ h1{
 h2{
     font-size: 50px;
 }
-h3{
-    font-size: 20px;
-}
+
 
 header#header-section{
     // border: 1px solid red;
@@ -72,6 +70,10 @@ section#how-to-start-section{
 }
 
 section#features{
+    h3{
+        font-size: 20px;
+    }
+
     .row{
         gap: 30px;
         img{
@@ -84,6 +86,36 @@ section#features{
     button{
         font-size: 25px;
         padding: 5px 40px;
+    }
+}
+
+section#pricing{
+    h3{
+        font-size: 35px;
+    }
+
+    .row{
+        & > div{
+            padding: 15px 10px;
+
+            button{
+                padding: 10px 30px;
+                border-radius: 50px;
+                font-size: 20px;
+            }
+            span{
+                font-size: 35px;
+                font-weight: bold;
+            }
+        }
+        div{
+            border-radius: 5px;
+        }
+        
+        ul li{
+            font-size: 18px;
+            line-height: 25px;
+        }
     }
 }
 
